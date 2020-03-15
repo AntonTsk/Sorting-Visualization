@@ -30,11 +30,11 @@ speed_up_button = button(white, 110,screen_height+60,50,20,'Up')
 speed_down_button = button(white, 110,screen_height+120,50,20,'Down')
 length_up_button = button(white, 265,screen_height+60,50,20,'+')
 length_down_button = button(white, 265,screen_height+120,50,20,'-')
-bubble_sort_button = button(white, 400,screen_height+10,100,20,'Bubble Sort')
-generate_list_button = button(white, 400,screen_height+40,100,20,'Generate')
-stop_button = button(white, 400,screen_height+70,100,20,'Stop')
-insert_sort_button = button(white, 400,screen_height+100,100,20,'Insert Sort')
-choise_sort_button = button(white, 400,screen_height+130,100,20,'Choise Sort')
+generate_list_button = button(white, 400,screen_height+70,100,20,'Generate')
+stop_button = button(white, 400,screen_height+100,100,20,'Stop')
+bubble_sort_button = button(white,600,screen_height+40,100,20,'Bubble Sort')
+insert_sort_button = button(white,600,screen_height+70,100,20,'Insert Sort')
+choise_sort_button = button(white, 600,screen_height+100,100,20,'Choise Sort')
 
 
 
@@ -157,7 +157,9 @@ while run:
             j = 1
         if(list == list_sorted):
             a = ''
+
     elif a == 'choise':
+
         for i in range(len(list)):
             if(i == j):
                 pygame.draw.rect(screen, blue, pygame.Rect(i * distance, y, width, -list[i]))
@@ -165,6 +167,8 @@ while run:
                 pygame.draw.rect(screen, white, pygame.Rect(i * distance, y, width, -list[i]))
         
         if(list[j]<list[k]):
+            pygame.draw.rect(screen, red, pygame.Rect(j * distance, y, width, -list[j]))
+            pygame.draw.rect(screen, red, pygame.Rect((k) * distance, y, width, -list[k]))
             list[k], list[j] = list[j], list[k]
         
         j+= 1
