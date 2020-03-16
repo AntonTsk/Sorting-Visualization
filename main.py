@@ -33,8 +33,8 @@ length_down_button = button(white, 265,screen_height+120,50,20,'-')
 generate_arr_button = button(white, 400,screen_height+70,100,20,'Generate')
 stop_button = button(white, 400,screen_height+100,100,20,'Stop')
 bubble_sort_button = button(white,600,screen_height+40,100,20,'Bubble Sort')
-insert_sort_button = button(white,600,screen_height+70,100,20,'Insert Sort')
-choise_sort_button = button(white, 600,screen_height+100,100,20,'Choise Sort')
+insert_sort_button = button(white,600,screen_height+70,100,20,'Insertion sort')
+choise_sort_button = button(white, 600,screen_height+100,100,20,'Selection sort')
 
 
 
